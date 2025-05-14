@@ -22,7 +22,10 @@ import com.student.repository.Repository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://studentmanagement.up.railway.app"
+	})
 public class Controller {
 	
 	@Autowired
